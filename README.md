@@ -16,3 +16,5 @@ Add a Task: Enter a task in the input field, select a category (urgent-important
 Categorize and Display: Tasks are automatically sorted into the corresponding quadrant of the Eisenhower Matrix based on their category.
 Track Progress: Check the motivation bar to see the percentage of completed tasks out of the total tasks for today.
 Drag-and-Drop: Move tasks between quadrants using drag-and-drop for easy reorganization.
+
+You can use it here: https://nammatodo.tiiny.site/
