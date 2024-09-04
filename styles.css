@@ -1,0 +1,151 @@
+/* styles.css */
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d2d2d; /* Dark grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container styling */
+  .app-container {
+    width: 80%; /* Adjusted width to fit laptop screen */
+    max-width: 1200px;
+    text-align: center;
+    background-color: #333; /* Slightly lighter grey for the container */
+    border-radius: 10px;
+    padding: 30px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px; /* Added margin for better spacing */
+  }
+  
+  /* Header styling */
+  header {
+    margin-bottom: 30px; /* Increased margin for better spacing */
+  }
+  
+  header h1 {
+    font-family: 'Roboto', sans-serif; /* Stylish font for title */
+    font-size: 3rem; /* Increased font size for better visibility */
+    color: #f8c02b; /* Golden-yellow color for the title */
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.5rem; /* Increased font size for better visibility */
+    color: #ddd; /* Light grey color for the subtitle */
+  }
+  
+  /* Task input section */
+  .task-input {
+    display: flex;
+    gap: 15px; /* Increased gap for better spacing */
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #new-task, #task-category, #task-date, #task-time {
+    padding: 15px; /* Increased padding for better spacing */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #new-task {
+    flex-grow: 2;
+    background-color: #444; /* Darker grey background for input */
+    color: #fff; /* White text color */
+  }
+  
+  #task-category, #task-date, #task-time {
+    background-color: #555; /* Slightly lighter grey */
+    color: #fff; /* White text color */
+  }
+  
+  #add-task {
+    padding: 15px 20px; /* Increased padding for better spacing */
+    border: none;
+    background-color: #f28c28; /* Bright orange for button */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Eisenhower Matrix styling */
+  .eisenhower-matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Increased gap for better spacing */
+  }
+  
+  .matrix-quadrant {
+    background-color: #444; /* Darker grey background for quadrants */
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .matrix-quadrant h2 {
+    margin-top: 0;
+    font-size: 2rem; /* Increased font size for better visibility */
+    color: #f8c02b; /* Golden-yellow for headings */
+  }
+  
+  /* Task list styling */
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Added margin for better spacing */
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px; /* Increased padding for better spacing */
+    border: 1px solid #555; /* Border color */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    background-color: #333; /* Dark grey background for tasks */
+    color: #ddd; /* Light grey text color */
+  }
+  
+  .task-item.completed {
+    color: #888; /* Grey color for completed tasks */
+  }
+  
+  .task-text.completed {
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+  }
+  
+  .delete-button {
+    text-decoration: none; /* Ensures delete button is not striked */
+  }
+  
+  /* Date and time styling */
+  .task-datetime {
+    font-size: 1rem; /* Increased font size for better visibility */
+    color: #666; /* Optional: Change text color */
+    margin-left: 12px; /* Increased margin for better spacing */
+  }
+  
+  /* Extras styling */
+  .extras {
+    margin-top: 30px; /* Increased margin for better spacing */
+  }
+  
+  #motivation-bar {
+    width: 100%;
+    height: 25px; /* Increased height for better visibility */
+    background-color: #555; /* Background for progress bar */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Added margin for better spacing */
+  }
+  
+  /* Font import for stylish title */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');

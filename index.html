@@ -1,0 +1,62 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Todo Listu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Namma Todo</h1>
+            <p>Prioritize your tasks like a South Indian prioritizes Education over Sports!</p>
+        </header>
+
+        <!-- Task input section -->
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <select id="task-category">
+                <option value="urgent-important">Urgent & Important</option>
+                <option value="not-urgent-important">Important but Not Urgent</option>
+                <option value="urgent-not-important">Urgent but Not Important</option>
+                <option value="not-urgent-not-important">Not Urgent or Important</option>
+            </select>
+            <input type="date" id="task-date">
+            <input type="time" id="task-time">
+            <button id="add-task">Add Task</button>
+        </div>
+
+        <!-- Eisenhower Matrix -->
+        <div class="eisenhower-matrix">
+            <div id="urgent-important" class="matrix-quadrant">
+                <h2>Do First</h2>
+                <ul class="task-list"></ul>
+            </div>
+            <div id="not-urgent-important" class="matrix-quadrant">
+                <h2>Schedule</h2>
+                <ul class="task-list"></ul>
+            </div>
+            <div id="urgent-not-important" class="matrix-quadrant">
+                <h2>Delegate</h2>
+                <ul class="task-list"></ul>
+            </div>
+            <div id="not-urgent-not-important" class="matrix-quadrant">
+                <h2>Eliminate</h2>
+                <ul class="task-list"></ul>
+            </div>
+        </div>
+
+        <!-- Motivation Meter and South Indian Wisdom -->
+        <div class="extras">
+            <progress id="motivation-bar" value="0" max="100"></progress>
+            <p id="quote"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
